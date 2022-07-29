@@ -1,5 +1,3 @@
-# autopilot tic tac toe example
-
 # implements a game tic tac toe
 
 # imports
@@ -189,9 +187,9 @@ class TicTacToe:
                 # ask the player to make a move
                 move = int(input("Enter your move: "))
             # check if the move is valid
-            if self.is_move_valid(move):
+            if self.is_move_valid(self.move):
                 # make the move
-                self.make_move(move, self.player)
+                self.make_move(self.move, self.player)
             # check if the game is over
             if self.is_game_over() == 'draw':
                 # game is a tie
